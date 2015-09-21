@@ -1,4 +1,4 @@
-This program takes a VOCI speech decoding JSON (speech recognition output) and a dual channel audio file, then finds locations where the microphone bleed over occurs and cleans up the JSON decoding according to which channel has more power in those regions so words don't show up on both channels.
+This program takes a VOCI speech decoding JSON (speech recognition output) and a dual channel PCM WAV audio file, then finds locations where the microphone bleed over occurs and cleans up the JSON decoding according to which channel has more power in those regions so words don't show up on both channels.
 
 Usage: python bleedover.py <input wav dir> <input JSON dir> <output JSON dir>
 
