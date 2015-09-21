@@ -7,7 +7,11 @@ The wav filename and JSON filename must both exist (in the wav dir and the JSON 
 No JSON files will be provided for this repo cuz Voci decoding format is proprietary.  However the approach to removing mic bleed used in this program is effective.
 
 Conceptually the code does the following:
+
 1. Run speech recognition across both audio channels.
+
 2. Find regions where words are found on both channels at the same time.
+
 3. Track the power levels for those regions and select the channel that has the most power
+
 4. Fix the speech recognition output according to the power heuristic.  You may also fix the audio file itself with some modification of the code.
